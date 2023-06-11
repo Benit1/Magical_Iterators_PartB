@@ -214,12 +214,7 @@ MagicalContainer::SideCrossIterator &MagicalContainer::SideCrossIterator::operat
     if (index >= this->container.size() + 1) {
         throw std::runtime_error("Iterator cannot be promoted");
     }
-//    if (index == this->container.size()+1) {
-//        frontElement = this->container.elementsContainer.end();
-//        endElement = this->container.elementsContainer.end();
-//        return *this;
-//
-//    }
+
 //If flip is true, frontElement (an iterator pointing to the start of the container) is incremented
 //otherwise endElement(an iterator pointing to the end of the container) is decremented.
     flip ? ++frontElement : --endElement;
